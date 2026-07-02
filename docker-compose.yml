@@ -1,0 +1,57 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres-server
+    restart: always
+    environment:
+      POSTGRES_USER: user_producao
+      POSTGRES_PASSWORD: password_producao
+      POSTGRES_DB: producao_intelectual
+    ports: [ "5432:5432" ]
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql/01-init.sql:/docker-entrypoint-initdb.d/01-init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user_producao -d producao_intelectual"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - lncc-network
+      
+  backend:
+    build: ./backend
+    container_name: backend-server
+    restart: always
+    ports: [ "8000:8000" ]
+    environment:
+      - DATABASE_URL=postgresql://user_producao:password_producao@db:5432/producao_intelectual
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - lncc-network
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    build: .
+    container_name: frontend-server
+    restart: always
+    ports: [ "5173:5173", "5174:5174" ]
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    depends_on: [ backend ]
+    networks:
+      - lncc-network
+
+volumes:
+  postgres_data: 
+  node_modules:
+
+networks:
+  lncc-network:
+    driver: bridge
