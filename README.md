@@ -126,14 +126,10 @@ docker compose up -d --build
 
 ## 📝 Equipe
 
-- **Desenvolvedor**: [Seu Nome Aqui]
-- **Email**: seu.email@example.com
-- **LinkedIn**: https://linkedin.com/in/seu-perfil
-- **GitHub**: https://github.com/seu-usuario
-
-## 📞 Suporte
-
-Para dúvidas ou reportar bugs, abra uma [Issue](../../issues) no GitHub.
+- **Desenvolvedor**: [Paulo Ferreira]
+- **Email**: phaulohenriqueferreira@gmail.com
+- **LinkedIn**: https://linkedin.com/in/pauloferreirarh/
+- **GitHub**: https://github.com/phaulosantosdev
 
 ## 📄 Licença
 
@@ -141,15 +137,6 @@ Licença Interna LNCC - Uso exclusivo para o Laboratório Nacional de Computaç�
 
 ---
 
-## 🔗 Links Importantes
-
-- 🌐 **Deploy**: https://seu-usuario.github.io/Projeto-lncc/
-- 🐙 **GitHub**: https://github.com/seu-usuario/Projeto-lncc
-- 📚 **Documentação**: ./DOCUMENTACAO_PROJETO.md
-- 🚀 **Deploy Guide**: ./GUIA_DEPLOY_GITHUB_PAGES.md
-
----
-
-**Criado com ❤️ para o LNCC SDumont**
+**Criado para o LNCC SDumont**
 
 Última atualização: 2026-06-27
