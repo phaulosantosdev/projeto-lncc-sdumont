@@ -10,7 +10,7 @@
 
 ## 📸 Visão Geral do Projeto
 
-![Painel de Produções](./assets/painel-producoes.png)
+![Painel de Produções](./Painel-producoes.jpeg)
 
 > **Dashboard completo** com estatísticas consolidadas, visualizações de tendências e filtros avançados para explorar 430+ produções intelectuais do LNCC de forma intuitiva e responsiva.
 
