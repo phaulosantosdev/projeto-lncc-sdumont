@@ -8,6 +8,16 @@
 - 🟢 **Versão**: 1.0
 - 🟢 **Licença**: LNCC Interna
 
+## 📸 Visualização do Painel
+
+![Painel de Produções LNCC SDumont](https://img.shields.io/badge/Painel-Produções-blue)
+
+> **Dashboard interativo** com estatísticas completas, gráficos de tendência e sistema de filtros avançados para consulta de 430+ produções científicas do LNCC.
+
+![Painel de Produções](./assets/painel-producoes.png)
+
+---
+
 ## ✨ Principais Features
 
 ✅ **430 Produções Intelectuais** catalogadas (2009-2026)
